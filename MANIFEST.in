@@ -1,0 +1,13 @@
+# The source distribution also supports the documented examples and source tests.
+include CHANGELOG.md CONTRIBUTING.md PRODUCTION_PLAN.md .gitattributes
+include .github/workflows/test.yml
+include build_backend/release.py
+include examples/bindings.json examples/eu-context.md examples/starter-swapped.bundle.json
+include examples/starter/SHA256SUMS examples/starter/report.jpg examples/starter/report.pdf
+include examples/starter/coordinates.json examples/starter/normalized.json examples/starter/visible.json
+include evidence/eu-teaching-results.json evidence/result-states-validation.json
+include evidence/performance.json evidence/starter-results.json evidence/suite-summary-performance.json evidence/validator-results.json
+include research/adoption.md research/consumer.md research/ecosystem.md research/next-improvements.md
+include research/sdk-roundtrip.md research/subject-graph.md research/validation.md
+include scripts/check_starter.py scripts/locate_row.py scripts/read-fhirpath.cjs scripts/validate-fhir.sh
+include scripts/benchmark_check.py scripts/benchmark_suite.py scripts/verify_distribution.py

@@ -1,0 +1,11 @@
+# Rights and attribution
+
+The project’s original Python, shell and JavaScript code and technical documentation use the [MIT license](LICENSE). The original teaching report and its original annotations in `examples` use [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/). Third-party standards, sample materials and terminology retain their respective terms.
+
+**Synthetic starter example.** Credit Adrian Perez, *MedExtract Synthetic Lab Reports — Starter*, v0.2.0, CC BY 4.0. The PDF, JPEG and three JSON sidecars in `examples/starter` are byte-identical copies of RPT_000726 from that release with shorter filenames. Its rights notices, terminology credits, and the official code-to-name crosswalk accompany the example. The supplied checksums cover those data and notices. [Pinned source](https://huggingface.co/datasets/AdrianPerez3/medextract-synthetic-lab-reports-starter/tree/81da521d08425bd57922a1cf8bb17aa49d11b537) · [CC BY 4.0 text](examples/starter/CC-BY-4.0.txt) · [Terminology credits](examples/starter/TERMINOLOGY.md)
+
+**LOINC and UCUM.** This material contains content from LOINC. Preserve the licensor's full terms and trademark notice with copies. UCUM codes have their own terms. The additional CRP and glucose teaching references correspond to LOINC 1988-5 and 2345-7. [LOINC short notice](examples/starter/LOINC_short_license.txt) · [Full terminology license](examples/starter/license.txt) · [CRP term](https://loinc.org/1988-5/) · [Glucose term](https://loinc.org/2345-7/) · [UCUM license](https://ucum.org/license)
+
+**HL7.** FHIR and HL7 are marks of Health Level Seven International. Specimen code SER is from the HL7 v2 specimen-type code system. HL7 Europe publishes its Laboratory Report 2.1.0 guide under CC0. Validator tooling and terminology publications have their respective upstream terms. [Specimen code system](https://terminology.hl7.org/CodeSystem-v2-0487.html) · [FHIR licensing](https://hl7.org/fhir/R4/license.html) · [HL7 Europe Laboratory Report](https://hl7.eu/fhir/laboratory/2.1.0/)
+
+The v2 teaching example uses LOINC 713-8 and 706-2 from the supplied starter crosswalk, and standard result-absence codes defined by HL7. [LOINC crosswalk and attribution](examples/starter/TERMINOLOGY.md) · [HL7 R4 DataAbsentReason](https://hl7.org/fhir/R4/codesystem-data-absent-reason.html)

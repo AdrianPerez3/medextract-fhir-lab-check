@@ -1,0 +1,67 @@
+{
+  "python": "3.11.9",
+  "platform": "Darwin",
+  "machine": "arm64",
+  "manifest_cases": 3000,
+  "workload": "Repeat a correct report, a lost comparator and a missing bundle equally.",
+  "scope": "run_suite and indented UTF-8 JSON serialization, no trailing newline. Separate tracemalloc run per mode, warm filesystem, six alternating timed pairs. Python allocations exclude native memory and filesystem cache.",
+  "replay": "python3 scripts/benchmark_suite.py",
+  "modes": {
+    "full": {
+      "status": 2,
+      "summary": {
+        "total_reports": 3000,
+        "report_counts": {
+          "pass": 1000,
+          "fail": 1000,
+          "unevaluable": 1000
+        },
+        "known_expected_rows": 6000,
+        "evaluated_expected_rows": 4000,
+        "reports_with_unknown_expected_rows": 0,
+        "affected_expected_rows": 1000,
+        "finding_counts": {
+          "comparator-changed": 1000
+        }
+      },
+      "json_bytes": 532426,
+      "traced_peak_bytes": 4784957,
+      "timings_ms": [
+        325.452,
+        327.02,
+        328.468,
+        328.898,
+        328.036,
+        342.733
+      ]
+    },
+    "summary_only": {
+      "status": 2,
+      "summary": {
+        "total_reports": 3000,
+        "report_counts": {
+          "pass": 1000,
+          "fail": 1000,
+          "unevaluable": 1000
+        },
+        "known_expected_rows": 6000,
+        "evaluated_expected_rows": 4000,
+        "reports_with_unknown_expected_rows": 0,
+        "affected_expected_rows": 1000,
+        "finding_counts": {
+          "comparator-changed": 1000
+        }
+      },
+      "json_bytes": 409,
+      "traced_peak_bytes": 1668359,
+      "timings_ms": [
+        321.058,
+        322.365,
+        325.538,
+        322.056,
+        326.611,
+        335.009
+      ]
+    }
+  }
+}

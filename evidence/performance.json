@@ -1,0 +1,156 @@
+{
+  "measurement_date_utc": "2026-11-24",
+  "baseline_archive": "medextract-fhir-lab-check-0.2.0-preview.zip",
+  "baseline_archive_sha256": "6c35af5791ba54b7b6d14221b081f087ea6ea4eeb9adc694227f28ce3d5ed00f",
+  "replay": "python3 -IB scripts/benchmark_check.py --baseline UNPACKED_PREVIEW_SOURCE_DIR --rows 16 1000 --repeats 21",
+  "python": "3.11.9",
+  "platform": "Darwin",
+  "os_release": "27.2.0",
+  "machine": "arm64",
+  "benchmark_sha256": "da6e17f239d0c203b773728d54f7ab8368b4a1984efdd6a69a45bef06a8d90ab",
+  "repeats": 21,
+  "method": "Warm in-process CLI including local file reads, JSON and stdout, with one warm-up per case. Separate single-run tracemalloc peak excludes startup and native allocations. Manifest checks also measure fresh interpreter wall time after priming a private bytecode cache on each checkout. Filesystem caches are warm in both measurements.",
+  "inputs": "Synthetic v1 collection with alternating quantity rows, shared specimen, and one removed comparator. Sender identifiers plus independent fullUrl manifest for bound cases.",
+  "baseline": {
+    "package_source_sha256": "d389fd498f4cfa2cc03a2cf7beff815f7cd277b70eab1808a7a88c8c98eb0d1c",
+    "cases": {
+      "16": {
+        "identified_check": {
+          "median_wall_ms": 0.511,
+          "wall_range_ms": [
+            0.495,
+            0.553
+          ],
+          "median_cpu_ms": 0.509,
+          "peak_python_bytes": 106562,
+          "stdout_sha256": "a51a6854d170fb6c5d4b6e804a74d3f5a3b5f1e8602265bb358fe5166e774970"
+        },
+        "manifest_check": {
+          "median_wall_ms": 0.716,
+          "wall_range_ms": [
+            0.695,
+            0.779
+          ],
+          "median_cpu_ms": 0.714,
+          "peak_python_bytes": 141773,
+          "stdout_sha256": "a51a6854d170fb6c5d4b6e804a74d3f5a3b5f1e8602265bb358fe5166e774970",
+          "median_fresh_process_wall_ms": 28.474
+        },
+        "manifest_suite": {
+          "median_wall_ms": 0.86,
+          "wall_range_ms": [
+            0.849,
+            0.889
+          ],
+          "median_cpu_ms": 0.858,
+          "peak_python_bytes": 143485,
+          "stdout_sha256": "2043acb7967a9f2e0e5408893defc526b549b491e3a93a4cd80e3315177bf002"
+        }
+      },
+      "1000": {
+        "identified_check": {
+          "median_wall_ms": 10.722,
+          "wall_range_ms": [
+            10.38,
+            10.897
+          ],
+          "median_cpu_ms": 10.718,
+          "peak_python_bytes": 4245833,
+          "stdout_sha256": "0d7db75f8fb2c6f786c1783ca6b7ddd919c0bec009f466e1cf950d8477210a00"
+        },
+        "manifest_check": {
+          "median_wall_ms": 22.131,
+          "wall_range_ms": [
+            21.755,
+            22.575
+          ],
+          "median_cpu_ms": 22.129,
+          "peak_python_bytes": 6287692,
+          "stdout_sha256": "0d7db75f8fb2c6f786c1783ca6b7ddd919c0bec009f466e1cf950d8477210a00",
+          "median_fresh_process_wall_ms": 51.094
+        },
+        "manifest_suite": {
+          "median_wall_ms": 23.154,
+          "wall_range_ms": [
+            22.631,
+            23.433
+          ],
+          "median_cpu_ms": 23.153,
+          "peak_python_bytes": 6289668,
+          "stdout_sha256": "27ecb5e767896c59549ac011aedc05b61d722df38f86cda55edc8fd9cb96bdeb"
+        }
+      }
+    }
+  },
+  "candidate": {
+    "package_source_sha256": "20a26d6642d1fc6ad383855e4d31c9a97a853842e3a19cefa326ac6895caca6f",
+    "cases": {
+      "16": {
+        "identified_check": {
+          "median_wall_ms": 0.627,
+          "wall_range_ms": [
+            0.592,
+            0.683
+          ],
+          "median_cpu_ms": 0.625,
+          "peak_python_bytes": 112650,
+          "stdout_sha256": "a51a6854d170fb6c5d4b6e804a74d3f5a3b5f1e8602265bb358fe5166e774970"
+        },
+        "manifest_check": {
+          "median_wall_ms": 0.678,
+          "wall_range_ms": [
+            0.656,
+            0.79
+          ],
+          "median_cpu_ms": 0.677,
+          "peak_python_bytes": 118092,
+          "stdout_sha256": "a51a6854d170fb6c5d4b6e804a74d3f5a3b5f1e8602265bb358fe5166e774970",
+          "median_fresh_process_wall_ms": 32.449
+        },
+        "manifest_suite": {
+          "median_wall_ms": 0.759,
+          "wall_range_ms": [
+            0.732,
+            0.812
+          ],
+          "median_cpu_ms": 0.757,
+          "peak_python_bytes": 120537,
+          "stdout_sha256": "2043acb7967a9f2e0e5408893defc526b549b491e3a93a4cd80e3315177bf002"
+        }
+      },
+      "1000": {
+        "identified_check": {
+          "median_wall_ms": 13.058,
+          "wall_range_ms": [
+            12.631,
+            13.301
+          ],
+          "median_cpu_ms": 13.057,
+          "peak_python_bytes": 4250812,
+          "stdout_sha256": "0d7db75f8fb2c6f786c1783ca6b7ddd919c0bec009f466e1cf950d8477210a00"
+        },
+        "manifest_check": {
+          "median_wall_ms": 14.309,
+          "wall_range_ms": [
+            14.129,
+            14.705
+          ],
+          "median_cpu_ms": 14.307,
+          "peak_python_bytes": 4548619,
+          "stdout_sha256": "0d7db75f8fb2c6f786c1783ca6b7ddd919c0bec009f466e1cf950d8477210a00",
+          "median_fresh_process_wall_ms": 47.128
+        },
+        "manifest_suite": {
+          "median_wall_ms": 14.434,
+          "wall_range_ms": [
+            13.96,
+            14.686
+          ],
+          "median_cpu_ms": 14.429,
+          "peak_python_bytes": 4551570,
+          "stdout_sha256": "27ecb5e767896c59549ac011aedc05b61d722df38f86cda55edc8fd9cb96bdeb"
+        }
+      }
+    }
+  }
+}

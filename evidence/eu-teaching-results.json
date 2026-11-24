@@ -1,0 +1,166 @@
+{
+  "date": "2026-11-24",
+  "scope": "One hand-authored synthetic document assembled with additional invented metadata. All checks used local files and disabled remote terminology.",
+  "reference": {
+    "path": "examples/reference.json",
+    "sha256": "f67b0677fb80fa3701ec83d6b9c4e86370807d5430304c38289e65adc0aace3b"
+  },
+  "source": {
+    "path": "examples/source.txt",
+    "sha256": "aeb0126655077e2687c9af4ccafafb4e528f85aa8a5917393e317589e808197c"
+  },
+  "document": {
+    "path": "examples/eu-teaching.document.json",
+    "sha256": "3e39522b862491aa7ec5d248403d95e8947ff3f361c6ec7e68ebb27c67a4ef26",
+    "entry_count": 7
+  },
+  "mutation": {
+    "description": "Remove only the structured comparator line for r01. All narrative and other bytes remain as written.",
+    "sha256": "800d4b123bf5f7c4539dd94aa6f8415a0be2ce47931845548f1cd19977302a31"
+  },
+  "validator": {
+    "version": "7.0.6",
+    "git": "86bf796ddc97",
+    "url": "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/7.0.6/validator_cli.jar",
+    "sha256": "2686590539f0b3ba7683149b25d78249f6886c04e2c326e884c5049d8947df89"
+  },
+  "fhir": "hl7.fhir.r4.core#4.0.1",
+  "core_package_sha256": "b090bf929e1f665cf2c91583720849695bc38d2892a7c5037c56cb00817fb091",
+  "eu_ig": "hl7.fhir.eu.laboratory#2.1.0",
+  "eu_package_sha256": "87019c396f4cff934ec5230ce1f97d76b79b40591be08161e694ad661129379c",
+  "eu_profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab",
+  "java": "OpenJDK 25.0.2",
+  "remote_terminology": false,
+  "allow_example_urls": true,
+  "commands": {
+    "base": "scripts/validate-fhir.sh \"$work_dir/validator_cli.jar\" \"$input_json\" \"$new_outcome_json\"",
+    "eu": "scripts/validate-fhir.sh \"$work_dir/validator_cli.jar\" \"$input_json\" \"$new_outcome_json\" \"$work_dir/eu-lab.tgz\"",
+    "source_rows": "python3 -m medextract_fhir_lab check --reference examples/reference.json --bundle \"$input_json\""
+  },
+  "profile_results": {
+    "final_base": {
+      "process_exit": 0,
+      "issues": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 2,
+        "information": 0
+      }
+    },
+    "final_eu": {
+      "process_exit": 0,
+      "issues": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 3,
+        "information": 2
+      }
+    },
+    "loss_base": {
+      "process_exit": 0,
+      "issues": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 2,
+        "information": 0
+      }
+    },
+    "loss_eu": {
+      "process_exit": 0,
+      "issues": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 3,
+        "information": 2
+      }
+    }
+  },
+  "diagnostics_shared_by_both_variants_for_each_target": {
+    "base": [
+      {
+        "severity": "warning",
+        "code": "business-rule",
+        "message": "Unable to validate code 'mg/L' in system 'http://unitsofmeasure.org' because the validator is running without terminology services",
+        "expression": [
+          "Bundle.entry[2].resource/*Observation/bac33e49-3270-5916-b972-f46ff84b9b8a*/.value.ofType(Quantity)"
+        ]
+      },
+      {
+        "severity": "warning",
+        "code": "business-rule",
+        "message": "Unable to validate code 'mg/dL' in system 'http://unitsofmeasure.org' because the validator is running without terminology services",
+        "expression": [
+          "Bundle.entry[3].resource/*Observation/af0ed4b2-42d1-5c85-b9c0-5821df62b56e*/.value.ofType(Quantity)"
+        ]
+      }
+    ],
+    "eu": [
+      {
+        "severity": "information",
+        "code": "informational",
+        "message": "This element does not match any known slice defined in the profile http://hl7.eu/fhir/laboratory/StructureDefinition/Composition-eu-lab|2.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)",
+        "expression": [
+          "Bundle.entry[0].resource/*Composition/1061fa31-25e9-5479-8ef6-289ceb7dc507*/.section[0]"
+        ]
+      },
+      {
+        "severity": "warning",
+        "code": "structure",
+        "message": "Found multiple matching profiles for urn:uuid:1061fa31-25e9-5479-8ef6-289ceb7dc507 among choices: http://hl7.org/fhir/5.0/StructureDefinition/profile-Composition|0.1.0, http://hl7.org/fhir/StructureDefinition/Composition|4.0.1",
+        "expression": [
+          "Bundle.entry[1].resource/*DiagnosticReport/107d87bc-1954-5a3c-9c2d-62187c25c84c*/.extension[0].value.ofType(Reference)"
+        ]
+      },
+      {
+        "severity": "warning",
+        "code": "business-rule",
+        "message": "Unable to validate code 'mg/L' in system 'http://unitsofmeasure.org' because the validator is running without terminology services",
+        "expression": [
+          "Bundle.entry[2].resource/*Observation/bac33e49-3270-5916-b972-f46ff84b9b8a*/.value.ofType(Quantity)"
+        ]
+      },
+      {
+        "severity": "warning",
+        "code": "business-rule",
+        "message": "Unable to validate code 'mg/dL' in system 'http://unitsofmeasure.org' because the validator is running without terminology services",
+        "expression": [
+          "Bundle.entry[3].resource/*Observation/af0ed4b2-42d1-5c85-b9c0-5821df62b56e*/.value.ofType(Quantity)"
+        ]
+      },
+      {
+        "severity": "information",
+        "code": "code-invalid",
+        "message": "None of the codings provided are in the value set 'Specimen Types' (http://hl7.eu/fhir/laboratory/ValueSet/lab-specimenType-eu-lab|2.1.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v2-0487#SER)",
+        "expression": [
+          "Bundle.entry[4].resource/*Specimen/4e0ede67-e310-5ab6-aae6-3d1fc1a07b15*/.type"
+        ]
+      }
+    ]
+  },
+  "row_checker": {
+    "original": {
+      "process_exit": 0,
+      "result": {
+        "schema_version": 1,
+        "result": "pass",
+        "expected_rows": 2,
+        "findings": []
+      }
+    },
+    "comparator_removed": {
+      "process_exit": 1,
+      "result": {
+        "schema_version": 1,
+        "result": "fail",
+        "expected_rows": 2,
+        "findings": [
+          {
+            "code": "comparator-changed",
+            "field": "valueQuantity.comparator",
+            "row_id": "r01"
+          }
+        ]
+      }
+    }
+  }
+}

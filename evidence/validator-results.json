@@ -1,0 +1,248 @@
+{
+  "measured_date": "2026-11-24",
+  "data": "Only project synthetic fixtures and the published HL7 Europe teaching example were processed locally.",
+  "runtime": {
+    "java": "OpenJDK 25.0.2",
+    "architecture": "aarch64",
+    "fhir": "4.0.1",
+    "terminology_server": null,
+    "validator_cli": {
+      "version": "7.0.6",
+      "git": "86bf796ddc97",
+      "url": "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/7.0.6/validator_cli.jar",
+      "sha256": "2686590539f0b3ba7683149b25d78249f6886c04e2c326e884c5049d8947df89"
+    }
+  },
+  "packages": {
+    "r4_core": {
+      "package": "hl7.fhir.r4.core#4.0.1",
+      "url": "https://packages2.fhir.org/packages/hl7.fhir.r4.core/4.0.1",
+      "sha256": "b090bf929e1f665cf2c91583720849695bc38d2892a7c5037c56cb00817fb091",
+      "cache_comparison": "4,738 archive files matched the hydrated cache byte-for-byte. The generated package/.index.json differed."
+    },
+    "eu_laboratory": {
+      "package": "hl7.fhir.eu.laboratory#2.1.0",
+      "url": "https://hl7.eu/fhir/laboratory/2.1.0/package.tgz",
+      "sha256": "87019c396f4cff934ec5230ce1f97d76b79b40591be08161e694ad661129379c",
+      "dependencies": {
+        "hl7.fhir.r4.core": "4.0.1",
+        "hl7.terminology.r4": "7.4.0",
+        "hl7.fhir.uv.extensions.r4": "5.3.0",
+        "hl7.fhir.uv.ips": "2.0.1",
+        "hl7.fhir.uv.xver-r5.r4": "0.1.0",
+        "hl7.fhir.eu.extensions.r4": "1.3.1",
+        "hl7.fhir.eu.base": "2.0.1"
+      }
+    },
+    "observed_cache_packages": [
+      "hl7.fhir.eu.base#2.0.1",
+      "hl7.fhir.eu.extensions.r4#1.3.1",
+      "hl7.fhir.r4.core#4.0.1",
+      "hl7.fhir.uv.extensions#5.4.0",
+      "hl7.fhir.uv.extensions.r4#5.2.0",
+      "hl7.fhir.uv.extensions.r4#5.3.0",
+      "hl7.fhir.uv.ipa#1.1.0",
+      "hl7.fhir.uv.ips#2.0.1",
+      "hl7.fhir.uv.smart-app-launch#2.0.0",
+      "hl7.fhir.uv.xver-r5.r4#0.1.0",
+      "hl7.fhir.xver-extensions#0.1.0",
+      "hl7.terminology#7.5.0",
+      "hl7.terminology.r4#6.2.0",
+      "hl7.terminology.r4#6.3.0",
+      "hl7.terminology.r4#7.1.0",
+      "hl7.terminology.r4#7.2.0",
+      "hl7.terminology.r4#7.3.0",
+      "hl7.terminology.r4#7.4.0",
+      "hl7.terminology.r5#7.5.0",
+      "ihe.pharm.mpd.r4#1.0.0-comment-2"
+    ],
+    "scope": "Top-level artifact digests and observed cache package versions. The transitive downloads were not individually locked by checksum."
+  },
+  "diagnostic_digest_definition": "Sort [severity, code, details.text, expression] lists lexicographically and hash compact UTF-8 JSON with ensure_ascii=false. Machine paths, timestamps, XHTML and line locations are excluded.",
+  "cases": [
+    {
+      "id": "correct-base",
+      "input": "examples/correct.bundle.json",
+      "input_sha256": "46b349d2c20c1e6cf33d0fa31ced0f3559be16bf302d4c782f4085f93e6aa0b7",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "allow_example_urls": true,
+      "process_exit": 0,
+      "severity": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 12,
+        "information": 0
+      },
+      "issue_codes": {
+        "warning.business-rule": 2,
+        "warning.invalid": 6,
+        "warning.invariant": 4
+      },
+      "normalized_diagnostic_sha256": "831d47e79505c0d271fbcdeccecd98e3b386262e4553ce3120bf266fe0f21504"
+    },
+    {
+      "id": "lost-limit-base",
+      "input": "examples/lost-limit.bundle.json",
+      "input_sha256": "b3a2a3bffbd6e3a08d5ef81a85ee6da3a74483396dcd904160c1aa2c1a0172fe",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "allow_example_urls": true,
+      "process_exit": 0,
+      "severity": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 12,
+        "information": 0
+      },
+      "issue_codes": {
+        "warning.business-rule": 2,
+        "warning.invalid": 6,
+        "warning.invariant": 4
+      },
+      "normalized_diagnostic_sha256": "831d47e79505c0d271fbcdeccecd98e3b386262e4553ce3120bf266fe0f21504"
+    },
+    {
+      "id": "missing-type-base",
+      "input": "derived: remove Bundle.type from correct-base",
+      "input_sha256": "703dfac391d55c8402096b1ea65e2442b2b33ec20d22f886c44943cd4c316916",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "allow_example_urls": true,
+      "process_exit": 1,
+      "severity": {
+        "fatal": 0,
+        "error": 7,
+        "warning": 12,
+        "information": 0
+      },
+      "issue_codes": {
+        "error.invariant": 6,
+        "error.structure": 1,
+        "warning.business-rule": 2,
+        "warning.invalid": 6,
+        "warning.invariant": 4
+      },
+      "normalized_diagnostic_sha256": "9aec64a908926007ee247c40377e222afe3d6867af8b931f8c0e7cfb6814d4e0"
+    },
+    {
+      "id": "official-eu",
+      "input": "https://hl7.eu/fhir/laboratory/2.1.0/Bundle-SimpleChemistryResultReport.json",
+      "input_sha256": "62a19b0864ab3d8c450b885b1d11a95ed3474700f3bfb18413f23f2289e36267",
+      "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab",
+      "allow_example_urls": true,
+      "process_exit": 0,
+      "severity": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 7,
+        "information": 6
+      },
+      "issue_codes": {
+        "information.informational": 6,
+        "warning.business-rule": 2,
+        "warning.invalid": 2,
+        "warning.not-found": 2,
+        "warning.structure": 1
+      },
+      "normalized_diagnostic_sha256": "c3647cc852e352de8f417983f5275c5e2e9fcc888b5bfe9f89fea3e78e546d83"
+    },
+    {
+      "id": "seeded-comparator-eu",
+      "input": "derived: add <= to first Observation.valueQuantity in official-eu",
+      "input_sha256": "46bdbddce2e1d8799c2777dc947c849fda3413e96ddc612397913ed9f371d201",
+      "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab",
+      "allow_example_urls": true,
+      "process_exit": 0,
+      "severity": {
+        "fatal": 0,
+        "error": 0,
+        "warning": 7,
+        "information": 6
+      },
+      "issue_codes": {
+        "information.informational": 6,
+        "warning.business-rule": 2,
+        "warning.invalid": 2,
+        "warning.not-found": 2,
+        "warning.structure": 1
+      },
+      "normalized_diagnostic_sha256": "c3647cc852e352de8f417983f5275c5e2e9fcc888b5bfe9f89fea3e78e546d83"
+    },
+    {
+      "id": "correct-eu-negative-control",
+      "input": "examples/correct.bundle.json",
+      "input_sha256": "46b349d2c20c1e6cf33d0fa31ced0f3559be16bf302d4c782f4085f93e6aa0b7",
+      "profile": "http://hl7.eu/fhir/laboratory/StructureDefinition/Bundle-eu-lab",
+      "allow_example_urls": true,
+      "process_exit": 1,
+      "severity": {
+        "fatal": 0,
+        "error": 12,
+        "warning": 12,
+        "information": 3
+      },
+      "issue_codes": {
+        "error.invariant": 3,
+        "error.structure": 8,
+        "error.value": 1,
+        "information.code-invalid": 1,
+        "information.structure": 2,
+        "warning.business-rule": 2,
+        "warning.invalid": 6,
+        "warning.invariant": 4
+      },
+      "normalized_diagnostic_sha256": "5d318c4e9ba8744b3465785a77bc9b094925ef841d8302301713fd29f9210907"
+    },
+    {
+      "id": "correct-base-stock-url-policy",
+      "input": "examples/correct.bundle.json",
+      "input_sha256": "46b349d2c20c1e6cf33d0fa31ced0f3559be16bf302d4c782f4085f93e6aa0b7",
+      "profile": "http://hl7.org/fhir/StructureDefinition/Bundle",
+      "allow_example_urls": false,
+      "process_exit": 1,
+      "severity": {
+        "fatal": 0,
+        "error": 3,
+        "warning": 12,
+        "information": 2
+      },
+      "issue_codes": {
+        "error.invalid": 3,
+        "information.structure": 2,
+        "warning.business-rule": 2,
+        "warning.invalid": 6,
+        "warning.invariant": 4
+      },
+      "normalized_diagnostic_sha256": "d7890fdad520f16ce61f40c4c62f46da4993f4706995d058fabbbcc1699721e8"
+    }
+  ],
+  "multi_input_control": {
+    "tool": "unwrapped HL7 CLI 7.0.6",
+    "case_ids": [
+      "correct-base",
+      "lost-limit-base",
+      "missing-type-base"
+    ],
+    "allow_example_urls": true,
+    "process_exit": 0,
+    "output_resource_type": "Bundle",
+    "entry_severity": [
+      {
+        "fatal": 0,
+        "error": 0,
+        "warning": 12,
+        "information": 0
+      },
+      {
+        "fatal": 0,
+        "error": 0,
+        "warning": 12,
+        "information": 0
+      },
+      {
+        "fatal": 0,
+        "error": 7,
+        "warning": 12,
+        "information": 0
+      }
+    ]
+  }
+}

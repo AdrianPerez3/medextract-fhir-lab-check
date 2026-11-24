@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "test_name": "Hematíes",
+      "value": "4,19",
+      "unit": "10*6/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "789-8",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Hemoglobina corpuscular media (HCM)",
+      "value": "31,7",
+      "unit": "pg",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "785-6",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Conc. de hemoglobina corpuscular media (CHCM)",
+      "value": "33,4",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "786-4",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Plaquetas",
+      "value": "217,1",
+      "unit": "10*3/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "777-3",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Leucocitos",
+      "value": "6,83",
+      "unit": "10*3/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "6690-2",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Amplitud de distribución eritrocitaria (RDW-CV)",
+      "value": "12,3",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "788-0",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Hematocrito",
+      "value": "39,8",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "4544-3",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Hemoglobina",
+      "value": "13,3",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "718-7",
+      "panel": "Hemograma completo"
+    },
+    {
+      "test_name": "Sodio",
+      "value": "138,9",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2951-2",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Creatinina",
+      "value": "0,726",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2160-0",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Glucosa",
+      "value": "83,6",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2345-7",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Nitrógeno ureico (BUN)",
+      "value": "13,9",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "3094-0",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Proteínas totales",
+      "value": "6,69",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2885-2",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Albúmina",
+      "value": "4,83",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1751-7",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Potasio",
+      "value": "4,46",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2823-3",
+      "panel": "Bioquímica básica"
+    },
+    {
+      "test_name": "Cloruro",
+      "value": "103",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2075-0",
+      "panel": "Otros análisis"
+    },
+    {
+      "test_name": "Neutrófilos (%)",
+      "value": "44,38",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "770-8",
+      "panel": "Otros análisis"
+    },
+    {
+      "test_name": "Basófilos (%)",
+      "value": "2,09",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "706-2",
+      "panel": "Otros análisis"
+    },
+    {
+      "test_name": "Linfocitos (%)",
+      "value": "35,04",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "736-9",
+      "panel": "Otros análisis"
+    },
+    {
+      "test_name": "Colesterol total",
+      "value": "188,6",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2093-3",
+      "panel": "Perfil lipídico"
+    },
+    {
+      "test_name": "Colesterol HDL",
+      "value": "51,0",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2085-9",
+      "panel": "Perfil lipídico"
+    },
+    {
+      "test_name": "Triglicéridos",
+      "value": "126,8",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2571-8",
+      "panel": "Perfil lipídico"
+    },
+    {
+      "test_name": "Aspartato aminotransferasa (AST)",
+      "value": "38,7",
+      "unit": "U/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1920-8",
+      "panel": "Perfil hepático"
+    },
+    {
+      "test_name": "Bilirrubina total",
+      "value": "0,614",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1975-2",
+      "panel": "Perfil hepático"
+    },
+    {
+      "test_name": "Alanina aminotransferasa (ALT)",
+      "value": "28,9",
+      "unit": "U/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1742-6",
+      "panel": "Perfil hepático"
+    }
+  ]
+}

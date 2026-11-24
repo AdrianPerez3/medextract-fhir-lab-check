@@ -1,0 +1,14 @@
+SYNTHETIC LABORATORY REPORT • LAB-ABS-001
+Invented report for testing conversion. Hemograma, recuento automático.
+
+Fila  Prueba           Resultado      Unidad   Estado
+r01   Eosinófilos (%)  No realizado   —        Cancelado
+r02   Basófilos (%)    0,00           %        Final
+
+The first examination was not performed. No measurement exists on that row.
+The second examination returned zero, reported to two decimal places.
+The fixture explicitly asks the consumer to preserve those places on r02.
+Specimen information was not supplied for either row.
+
+Independent terminology key for this fictional automatic differential
+r01 = LOINC 713-8. r02 = LOINC 706-2. The reported display and UCUM code on r02 are both %.

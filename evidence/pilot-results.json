@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "result": "fail",
+  "summary": {
+    "total_reports": 5,
+    "report_counts": {
+      "pass": 2,
+      "fail": 3,
+      "unevaluable": 0
+    },
+    "known_expected_rows": 10,
+    "evaluated_expected_rows": 10,
+    "reports_with_unknown_expected_rows": 0,
+    "affected_expected_rows": 2,
+    "finding_counts": {
+      "comparator-changed": 1,
+      "invented-value": 1,
+      "narrative-changed": 1
+    }
+  },
+  "cases": [
+    {
+      "id": "eu-document",
+      "result": "pass",
+      "expected_rows": 2,
+      "affected_expected_rows": 0,
+      "finding_counts": {}
+    },
+    {
+      "id": "lost-comparator",
+      "result": "fail",
+      "expected_rows": 2,
+      "affected_expected_rows": 1,
+      "finding_counts": {
+        "comparator-changed": 1
+      }
+    },
+    {
+      "id": "absent-and-measured-zero",
+      "result": "pass",
+      "expected_rows": 2,
+      "affected_expected_rows": 0,
+      "finding_counts": {}
+    },
+    {
+      "id": "invented-zero",
+      "result": "fail",
+      "expected_rows": 2,
+      "affected_expected_rows": 1,
+      "finding_counts": {
+        "invented-value": 1
+      }
+    },
+    {
+      "id": "changed-human-readable-result",
+      "result": "fail",
+      "expected_rows": 2,
+      "affected_expected_rows": 0,
+      "finding_counts": {
+        "narrative-changed": 1
+      }
+    }
+  ]
+}

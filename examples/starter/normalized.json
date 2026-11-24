@@ -1,0 +1,229 @@
+{
+  "results": [
+    {
+      "test_name": "Cloro:Concentración de sustancia:Punto temporal:Suero o Plasma:Qn:",
+      "value": "103.0",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2075-0",
+      "panel": "Otros Analisis"
+    },
+    {
+      "test_name": "Neutrófilos / 100 leucocitos:Fracción numérica:Punto temporal:Sangre:Cuantitativo:Recuento automatizado",
+      "value": "44.38",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "770-8",
+      "panel": "Otros Analisis"
+    },
+    {
+      "test_name": "Cholest SerPl-mCnc",
+      "value": "188.6",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2093-3",
+      "panel": "Perfil Lipidico"
+    },
+    {
+      "test_name": "Hematíes:Concentración de número:Punto temporal:Sangre:Qn:Contaje automático",
+      "value": "4.19",
+      "unit": "10*6/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "789-8",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Hemoglobina:Masa entítica:Punto temporal:Glóbulos rojos:Qn:Contaje automático",
+      "value": "31.7",
+      "unit": "pg",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "785-6",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Sodio:Concentración de sustancia:Punto temporal:Suero o Plasma:Qn:",
+      "value": "138.9",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2951-2",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Creatinina:Concentración de masa:Punto temporal:Suero o Plasma:Qn:",
+      "value": "0.726",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2160-0",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Aspartato aminotransferasa:Concentración catalítica:Punto temporal:Suero o Plasma:Cuantitativo:",
+      "value": "38.7",
+      "unit": "U/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1920-8",
+      "panel": "Perfil Hepatico"
+    },
+    {
+      "test_name": "Hemoglobina:Masa/volumen entítico:Punto temporal:Glóbulos rojos:Qn:Contaje automático",
+      "value": "33.4",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "786-4",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Basófilos/Leucocitos:Fracción numérica:Punto temporal:Sangre:Qn:Contaje automático",
+      "value": "2.09",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "706-2",
+      "panel": "Otros Analisis"
+    },
+    {
+      "test_name": "Glucose SerPl-mCnc",
+      "value": "83.6",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2345-7",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Nitrógeno de urea:Concentración de masa:Punto temporal:Suero o Plasma:Cuantitativo:",
+      "value": "13.9",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "3094-0",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Proteínas:Concentración de masa:Punto temporal:Suero o Plasma:Qn:",
+      "value": "6.69",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2885-2",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "HDLc SerPl-mCnc",
+      "value": "51.0",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2085-9",
+      "panel": "Perfil Lipidico"
+    },
+    {
+      "test_name": "Platelets [#/volume] in Blood by Automated count",
+      "value": "217.1",
+      "unit": "10*3/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "777-3",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Albúmina:Concentración de masa:Punto temporal:Suero o Plasma:Qn:",
+      "value": "4.83",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1751-7",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Leucocitos:Concentración de número:Punto temporal:Sangre:Qn:Contaje automático",
+      "value": "6.83",
+      "unit": "10*3/uL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "6690-2",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Bilirrubina:Concentración de masa:Punto temporal:Suero o Plasma:Qn:",
+      "value": "0.614",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1975-2",
+      "panel": "Perfil Hepatico"
+    },
+    {
+      "test_name": "Erythrocyte [DistWidth] in Blood by Automated count",
+      "value": "12.3",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "788-0",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Linfocitos/Leucocitos:Fracción numérica:Punto temporal:Sangre:Qn:Contaje automático",
+      "value": "35.04",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "736-9",
+      "panel": "Otros Analisis"
+    },
+    {
+      "test_name": "Potasio:Concentración de sustancias:Punto temporal:Suero o Plasma:Cuantitativo:",
+      "value": "4.46",
+      "unit": "mmol/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2823-3",
+      "panel": "Bioquimica Basica"
+    },
+    {
+      "test_name": "Eritrocito/Sangre:Fracción de volumen:Punto temporal:Sangre:Qn:Contaje automático",
+      "value": "39.8",
+      "unit": "%",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "4544-3",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Hemoglobina:Concentración de masa:Punto temporal:Sangre:Qn:",
+      "value": "13.3",
+      "unit": "g/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "718-7",
+      "panel": "Hemograma Completo"
+    },
+    {
+      "test_name": "Trigl SerPl-mCnc",
+      "value": "126.8",
+      "unit": "mg/dL",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "2571-8",
+      "panel": "Perfil Lipidico"
+    },
+    {
+      "test_name": "Alanina aminotransferasa:Concentración Catalítica:Punto temporal:Suero o Plasma:Qn:",
+      "value": "28.9",
+      "unit": "U/L",
+      "reference_range": "",
+      "flag": null,
+      "loinc": "1742-6",
+      "panel": "Perfil Hepatico"
+    }
+  ]
+}

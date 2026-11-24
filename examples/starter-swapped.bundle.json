@@ -1,0 +1,800 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:660dee30-d8bf-56f5-9e0d-07cd9996140b",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "660dee30-d8bf-56f5-9e0d-07cd9996140b",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows/reports",
+            "value": "RPT_000726"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "text": "Laboratory report"
+        },
+        "result": [
+          {
+            "reference": "urn:uuid:cd306e67-cad1-578c-a07f-c07be38a04f5"
+          },
+          {
+            "reference": "urn:uuid:6f70b91f-82cd-5266-8f8f-e306b7eb057e"
+          },
+          {
+            "reference": "urn:uuid:5497b050-e0db-5612-a863-e47b23c19316"
+          },
+          {
+            "reference": "urn:uuid:431da2e0-6f68-5c7f-a05a-fb29197aa198"
+          },
+          {
+            "reference": "urn:uuid:1d1d0d8c-bfee-52ac-9543-2dd04a46d908"
+          },
+          {
+            "reference": "urn:uuid:9b83784b-ce34-596b-9a62-66c628880f2b"
+          },
+          {
+            "reference": "urn:uuid:d0a1d4d3-281c-530c-a226-5447dc000a4c"
+          },
+          {
+            "reference": "urn:uuid:d6e2320a-2112-550d-8aaa-752e230e0b90"
+          },
+          {
+            "reference": "urn:uuid:4c7f4091-5c60-54df-847a-16d345888039"
+          },
+          {
+            "reference": "urn:uuid:7d0fe563-be5c-51ce-b438-bc917504ef27"
+          },
+          {
+            "reference": "urn:uuid:a0bfced8-20a7-5613-ae84-4a6f0fa6419c"
+          },
+          {
+            "reference": "urn:uuid:5a75c69a-eeb4-5f68-b381-f03fe12483c8"
+          },
+          {
+            "reference": "urn:uuid:9b1a2988-316b-5e3b-b963-9af75390f614"
+          },
+          {
+            "reference": "urn:uuid:8a1856f8-c10d-5a88-93a6-401f96ba0f37"
+          },
+          {
+            "reference": "urn:uuid:73154ce9-4f9e-5612-83d4-a8d4a0eb1a30"
+          },
+          {
+            "reference": "urn:uuid:ae4b16a9-2353-5522-8648-1cfd3595cc7a"
+          },
+          {
+            "reference": "urn:uuid:c6181a87-b4e6-59c8-8659-f66da2ce656e"
+          },
+          {
+            "reference": "urn:uuid:649a67c7-6a53-54b9-be2f-997aa3e6bc41"
+          },
+          {
+            "reference": "urn:uuid:84fd1276-5621-5da5-a5d5-b9928ec6ae6f"
+          },
+          {
+            "reference": "urn:uuid:51d24f01-fe6c-5fec-b34a-b40e2737b12e"
+          },
+          {
+            "reference": "urn:uuid:533ac904-d00d-5a63-af63-42024142f492"
+          },
+          {
+            "reference": "urn:uuid:db34367d-4333-5459-b4fc-bc6bcd19b293"
+          },
+          {
+            "reference": "urn:uuid:ce04d54f-c569-5d0f-b4fa-f6a61da6a126"
+          },
+          {
+            "reference": "urn:uuid:e91fde6d-925e-5da5-9933-f1b236fe7cae"
+          },
+          {
+            "reference": "urn:uuid:fc0f3360-fd2f-50cc-b6f5-0a51d0196a3f"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:cd306e67-cad1-578c-a07f-c07be38a04f5",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "cd306e67-cad1-578c-a07f-c07be38a04f5",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.1"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "789-8"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 4.19,
+          "system": "http://unitsofmeasure.org",
+          "unit": "10*6/uL",
+          "code": "10*6/uL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6f70b91f-82cd-5266-8f8f-e306b7eb057e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "6f70b91f-82cd-5266-8f8f-e306b7eb057e",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.2"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "785-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 31.7,
+          "system": "http://unitsofmeasure.org",
+          "unit": "pg",
+          "code": "pg"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5497b050-e0db-5612-a863-e47b23c19316",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5497b050-e0db-5612-a863-e47b23c19316",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.3"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "786-4"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 33.4,
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "code": "g/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:431da2e0-6f68-5c7f-a05a-fb29197aa198",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "431da2e0-6f68-5c7f-a05a-fb29197aa198",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.4"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "777-3"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 217.1,
+          "system": "http://unitsofmeasure.org",
+          "unit": "10*3/uL",
+          "code": "10*3/uL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1d1d0d8c-bfee-52ac-9543-2dd04a46d908",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "1d1d0d8c-bfee-52ac-9543-2dd04a46d908",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.5"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 6.83,
+          "system": "http://unitsofmeasure.org",
+          "unit": "10*3/uL",
+          "code": "10*3/uL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9b83784b-ce34-596b-9a62-66c628880f2b",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9b83784b-ce34-596b-9a62-66c628880f2b",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.6"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "788-0"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 12.3,
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d0a1d4d3-281c-530c-a226-5447dc000a4c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d0a1d4d3-281c-530c-a226-5447dc000a4c",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.7"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "4544-3"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 39.8,
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d6e2320a-2112-550d-8aaa-752e230e0b90",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "d6e2320a-2112-550d-8aaa-752e230e0b90",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.8"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 13.3,
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "code": "g/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4c7f4091-5c60-54df-847a-16d345888039",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "4c7f4091-5c60-54df-847a-16d345888039",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.9"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2951-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 138.9,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7d0fe563-be5c-51ce-b438-bc917504ef27",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "7d0fe563-be5c-51ce-b438-bc917504ef27",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.10"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2160-0"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 83.6,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:a0bfced8-20a7-5613-ae84-4a6f0fa6419c",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "a0bfced8-20a7-5613-ae84-4a6f0fa6419c",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.11"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 0.726,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5a75c69a-eeb4-5f68-b381-f03fe12483c8",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "5a75c69a-eeb4-5f68-b381-f03fe12483c8",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.12"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "3094-0"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 13.9,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:9b1a2988-316b-5e3b-b963-9af75390f614",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "9b1a2988-316b-5e3b-b963-9af75390f614",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.13"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2885-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 6.69,
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "code": "g/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:8a1856f8-c10d-5a88-93a6-401f96ba0f37",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "8a1856f8-c10d-5a88-93a6-401f96ba0f37",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.14"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1751-7"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 4.83,
+          "system": "http://unitsofmeasure.org",
+          "unit": "g/dL",
+          "code": "g/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:73154ce9-4f9e-5612-83d4-a8d4a0eb1a30",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "73154ce9-4f9e-5612-83d4-a8d4a0eb1a30",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.15"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2823-3"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 4.46,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ae4b16a9-2353-5522-8648-1cfd3595cc7a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ae4b16a9-2353-5522-8648-1cfd3595cc7a",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.16"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2075-0"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 103.0,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mmol/L",
+          "code": "mmol/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:c6181a87-b4e6-59c8-8659-f66da2ce656e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "c6181a87-b4e6-59c8-8659-f66da2ce656e",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.17"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "770-8"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 44.38,
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:649a67c7-6a53-54b9-be2f-997aa3e6bc41",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "649a67c7-6a53-54b9-be2f-997aa3e6bc41",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.18"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "706-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 2.09,
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:84fd1276-5621-5da5-a5d5-b9928ec6ae6f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "84fd1276-5621-5da5-a5d5-b9928ec6ae6f",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.19"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "736-9"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 35.04,
+          "system": "http://unitsofmeasure.org",
+          "unit": "%",
+          "code": "%"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:51d24f01-fe6c-5fec-b34a-b40e2737b12e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "51d24f01-fe6c-5fec-b34a-b40e2737b12e",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.20"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2093-3"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 188.6,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:533ac904-d00d-5a63-af63-42024142f492",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "533ac904-d00d-5a63-af63-42024142f492",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.21"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2085-9"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 51.0,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:db34367d-4333-5459-b4fc-bc6bcd19b293",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "db34367d-4333-5459-b4fc-bc6bcd19b293",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.22"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2571-8"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 126.8,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ce04d54f-c569-5d0f-b4fa-f6a61da6a126",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "ce04d54f-c569-5d0f-b4fa-f6a61da6a126",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.23"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1920-8"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 38.7,
+          "system": "http://unitsofmeasure.org",
+          "unit": "U/L",
+          "code": "U/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:e91fde6d-925e-5da5-9933-f1b236fe7cae",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "e91fde6d-925e-5da5-9933-f1b236fe7cae",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.24"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1975-2"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 0.614,
+          "system": "http://unitsofmeasure.org",
+          "unit": "mg/dL",
+          "code": "mg/dL"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:fc0f3360-fd2f-50cc-b6f5-0a51d0196a3f",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "fc0f3360-fd2f-50cc-b6f5-0a51d0196a3f",
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/starter/rows",
+            "value": "RPT_000726.25"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1742-6"
+            }
+          ]
+        },
+        "valueQuantity": {
+          "value": 28.9,
+          "system": "http://unitsofmeasure.org",
+          "unit": "U/L",
+          "code": "U/L"
+        }
+      }
+    }
+  ]
+}

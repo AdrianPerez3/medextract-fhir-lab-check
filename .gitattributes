@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# The public starter release authenticates the original bytes of each file.
+/examples/starter/** -text

@@ -1,0 +1,45 @@
+{
+  "dataset": "AdrianPerez3/medextract-synthetic-lab-reports-starter",
+  "revision": "81da521d08425bd57922a1cf8bb17aa49d11b537",
+  "report_parquet_sha256": {
+    "train": "7339cbc49ce6aeafcaad5bd7df58700065668c3dba3f8899a018e1f29fbc346d",
+    "validation": "4e1844f1a090d732c460aeef28e379baabcb78334bac251a9956b88a42c3d2a8",
+    "test": "e3df275f589e02400549ed1b0a32825859b3586ab220e9dfadf39ef10cf3d6c9"
+  },
+  "splits": {
+    "train": {
+      "reports": 800,
+      "rows": 14624,
+      "pages": 813,
+      "different_row_order": 201
+    },
+    "validation": {
+      "reports": 100,
+      "rows": 1895,
+      "pages": 101,
+      "different_row_order": 23
+    },
+    "test": {
+      "reports": 100,
+      "rows": 1810,
+      "pages": 101,
+      "different_row_order": 26
+    }
+  },
+  "distinct_loinc_strings": 32,
+  "totals": {
+    "reports": 1000,
+    "rows": 18329,
+    "pages": 1015,
+    "different_row_order": 250
+  },
+  "unmodified_reports_with_findings": 0,
+  "one_seeded_error_per_report_detected_at_expected_row": {
+    "comparator-changed": 200,
+    "unit-changed": 200,
+    "loinc-changed": 200,
+    "status-changed": 200,
+    "value-changed": 200
+  },
+  "scope": "Synthetic normalized/printed labels and index coverage. No OCR, image inspection, independent clinical mapping review, or EU document generation."
+}

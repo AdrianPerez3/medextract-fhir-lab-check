@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "release"
+backend-path = ["build_backend"]
+
+[project]
+name = "medextract-fhir-lab-check"
+dynamic = ["version"]
+description = "Offline source-fidelity checks for FHIR R4 laboratory results and reviewed document sections"
+requires-python = ">=3.10"
+readme = "README.md"
+license-files = [
+    "LICENSE",
+    "NOTICE.md",
+    "examples/starter/CC-BY-4.0.txt",
+    "examples/starter/LOINC_short_license.txt",
+    "examples/starter/license.txt",
+    "examples/starter/TERMINOLOGY.md",
+    "examples/starter/terminology.csv",
+]
+dependencies = []
+keywords = ["FHIR", "R4", "laboratory", "data fidelity"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Programming Language :: Python :: 3 :: Only",
+]
+
+[project.scripts]
+medextract-fhir-lab = "medextract_fhir_lab.__main__:main"
+
+[tool.setuptools]
+packages = ["medextract_fhir_lab"]
+
+[tool.setuptools.dynamic]
+version = {attr = "medextract_fhir_lab.__version__"}
+
+[tool.setuptools.data-files]
+"share/medextract-fhir-lab-check/schemas" = ["schemas/reference-v2.schema.json", "schemas/README.md"]
+"share/medextract-fhir-lab-check/evidence" = ["evidence/pilot-results.json"]
+"share/medextract-fhir-lab-check/examples" = [
+    "examples/absent-as-zero.bundle.json",
+    "examples/absent-correct.bundle.json",
+    "examples/absent-reference.json",
+    "examples/absent-source.txt",
+    "examples/correct.bundle.json",
+    "examples/eu-changed-narrative.document.json",
+    "examples/eu-narrative-review.json",
+    "examples/eu-teaching.document.json",
+    "examples/lost-limit.bundle.json",
+    "examples/pilot.suite.json",
+    "examples/reference.json",
+    "examples/source.txt",
+]

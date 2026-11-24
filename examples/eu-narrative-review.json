@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "report_identifier": {"system": "https://example.org/medextract/row/reports", "value": "LAB-DEMO-001"},
+  "section_coding": {"system": "http://loinc.org", "code": "26436-6"},
+  "xhtml_sha256": "7ecf8de7c2c5634046fa99186366aa9d02dd76ae37ea061d8da4bb276eb02d69"
+}

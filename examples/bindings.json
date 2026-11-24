@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "report_id": "LAB-DEMO-001",
+  "report_full_url": "https://example.org/fhir/DiagnosticReport/report1",
+  "rows": [
+    {"row_id": "r01", "observation_full_url": "https://example.org/fhir/Observation/result1"},
+    {"row_id": "r02", "observation_full_url": "https://example.org/fhir/Observation/result2"}
+  ]
+}

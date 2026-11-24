@@ -1,0 +1,11 @@
+SYNTHETIC LABORATORY REPORT • LAB-DEMO-001
+Software test fixture. All values and identifiers were invented for this example.
+
+Row   Análisis                 Resultado   Unidad   Estado           Muestra
+r01   Proteína C reactiva      ≤0,10       mg/L     Sin información  Sin información
+r02   Glucosa                  92          mg/dL    Final            Suero
+
+Independent mapping key for this exercise
+r01 = LOINC 1988-5       r02 = LOINC 2345-7
+Suero = SER in HL7 v2 specimen type (v2-0487).
+The specimen column describes the material documented on this report.

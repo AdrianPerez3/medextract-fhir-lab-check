@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "eu-document",
+      "reference": "reference.json",
+      "bundle": "eu-teaching.document.json",
+      "narrative_review": "eu-narrative-review.json"
+    },
+    {
+      "id": "lost-comparator",
+      "reference": "reference.json",
+      "bundle": "lost-limit.bundle.json"
+    },
+    {
+      "id": "absent-and-measured-zero",
+      "reference": "absent-reference.json",
+      "bundle": "absent-correct.bundle.json"
+    },
+    {
+      "id": "invented-zero",
+      "reference": "absent-reference.json",
+      "bundle": "absent-as-zero.bundle.json"
+    },
+    {
+      "id": "changed-human-readable-result",
+      "reference": "reference.json",
+      "bundle": "eu-changed-narrative.document.json",
+      "narrative_review": "eu-narrative-review.json"
+    }
+  ]
+}

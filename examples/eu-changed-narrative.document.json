@@ -1,0 +1,279 @@
+{
+  "resourceType": "Bundle",
+  "id": "839d5f77-bf28-59c6-9634-85c1c7f0d21e",
+  "identifier": {
+    "system": "https://example.org/medextract/teaching-documents",
+    "value": "DOC-DEMO-001"
+  },
+  "type": "document",
+  "timestamp": "2025-01-15T09:30:00Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:1061fa31-25e9-5479-8ef6-289ceb7dc507",
+      "resource": {
+        "resourceType": "Composition",
+        "id": "1061fa31-25e9-5479-8ef6-289ceb7dc507",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Software test fixture. Synthetic context. r01 Proteína C reactiva ≤0,10 mg/L (status and specimen unknown). r02 Glucosa 92 mg/dL (final, serum).</p></div>"
+        },
+        "identifier": {
+          "system": "https://example.org/medextract/row/reports",
+          "value": "LAB-DEMO-001"
+        },
+        "status": "final",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11502-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0"
+        },
+        "date": "2025-01-15T09:30:00Z",
+        "author": [
+          {
+            "reference": "urn:uuid:140e3ed9-9cf6-5e0f-ba05-7ce5ac8a727f"
+          }
+        ],
+        "title": "Synthetic teaching laboratory report",
+        "section": [
+          {
+            "title": "Laboratory results",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "26436-6"
+                }
+              ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>r01 Proteína C reactiva 9,99 mg/L (status and specimen unknown). r02 Glucosa 92 mg/dL (final, serum).</p></div>"
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:107d87bc-1954-5a3c-9c2d-62187c25c84c"
+              },
+              {
+                "reference": "urn:uuid:bac33e49-3270-5916-b972-f46ff84b9b8a"
+              },
+              {
+                "reference": "urn:uuid:af0ed4b2-42d1-5c85-b9c0-5821df62b56e"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:107d87bc-1954-5a3c-9c2d-62187c25c84c",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "107d87bc-1954-5a3c-9c2d-62187c25c84c",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Software test fixture. Synthetic context. r01 Proteína C reactiva ≤0,10 mg/L (status and specimen unknown). r02 Glucosa 92 mg/dL (final, serum).</p></div>"
+        },
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/5.0/StructureDefinition/extension-DiagnosticReport.composition",
+            "valueReference": {
+              "reference": "urn:uuid:1061fa31-25e9-5479-8ef6-289ceb7dc507"
+            }
+          }
+        ],
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/row/reports",
+            "value": "LAB-DEMO-001"
+          }
+        ],
+        "status": "unknown",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11502-2"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0"
+        },
+        "result": [
+          {
+            "reference": "urn:uuid:bac33e49-3270-5916-b972-f46ff84b9b8a"
+          },
+          {
+            "reference": "urn:uuid:af0ed4b2-42d1-5c85-b9c0-5821df62b56e"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:bac33e49-3270-5916-b972-f46ff84b9b8a",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "bac33e49-3270-5916-b972-f46ff84b9b8a",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Proteína C reactiva ≤0,10 mg/L. Result status unknown. Specimen unspecified.</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/row",
+            "value": "r01"
+          }
+        ],
+        "status": "unknown",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "1988-5"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0"
+        },
+        "effectiveDateTime": "2025-01-15T09:00:00Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:140e3ed9-9cf6-5e0f-ba05-7ce5ac8a727f"
+          }
+        ],
+        "valueQuantity": {
+          "value": 0.10,
+          "comparator": "<=",
+          "unit": "mg/L",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/L"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:af0ed4b2-42d1-5c85-b9c0-5821df62b56e",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "af0ed4b2-42d1-5c85-b9c0-5821df62b56e",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Glucosa 92 mg/dL. Result status final. Specimen serum.</p></div>"
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/medextract/row",
+            "value": "r02"
+          }
+        ],
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2345-7"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0"
+        },
+        "effectiveDateTime": "2025-01-15T09:00:00Z",
+        "performer": [
+          {
+            "reference": "urn:uuid:140e3ed9-9cf6-5e0f-ba05-7ce5ac8a727f"
+          }
+        ],
+        "valueQuantity": {
+          "value": 92,
+          "unit": "mg/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "mg/dL"
+        },
+        "specimen": {
+          "reference": "urn:uuid:4e0ede67-e310-5ab6-aae6-3d1fc1a07b15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:4e0ede67-e310-5ab6-aae6-3d1fc1a07b15",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "4e0ede67-e310-5ab6-aae6-3d1fc1a07b15",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Serum specimen for row r02 only.</p></div>"
+        },
+        "type": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v2-0487",
+              "code": "SER"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:d22e752c-c45b-5bc3-8121-309627179ff0",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "d22e752c-c45b-5bc3-8121-309627179ff0",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Fictional Teaching Subject. Synthetic birth date 2000-01-01.</p></div>"
+        },
+        "name": [
+          {
+            "family": "Subject",
+            "given": [
+              "Fictional Teaching"
+            ]
+          }
+        ],
+        "birthDate": "2000-01-01"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:140e3ed9-9cf6-5e0f-ba05-7ce5ac8a727f",
+      "resource": {
+        "resourceType": "Organization",
+        "id": "140e3ed9-9cf6-5e0f-ba05-7ce5ac8a727f",
+        "text": {
+          "status": "generated",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Synthetic Teaching Laboratory is a fictional organization.</p></div>"
+        },
+        "name": "Synthetic Teaching Laboratory"
+      }
+    }
+  ]
+}

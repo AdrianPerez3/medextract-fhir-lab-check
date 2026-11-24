@@ -1,0 +1,48 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "https://example.org/fhir/DiagnosticReport/report1",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "report1",
+        "identifier": [{"system": "https://example.org/medextract/row/reports", "value": "LAB-DEMO-001"}],
+        "status": "unknown",
+        "code": {"text": "Laboratory report"},
+        "result": [{"reference": "Observation/result1"}, {"reference": "Observation/result2"}]
+      }
+    },
+    {
+      "fullUrl": "https://example.org/fhir/Observation/result1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "result1",
+        "identifier": [{"system": "https://example.org/medextract/row", "value": "r01"}],
+        "status": "unknown",
+        "code": {"coding": [{"system": "http://loinc.org", "code": "1988-5"}]},
+        "valueQuantity": {"value": 0.10, "comparator": "<=", "unit": "mg/L", "system": "http://unitsofmeasure.org", "code": "mg/L"}
+      }
+    },
+    {
+      "fullUrl": "https://example.org/fhir/Observation/result2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "result2",
+        "identifier": [{"system": "https://example.org/medextract/row", "value": "r02"}],
+        "status": "final",
+        "code": {"coding": [{"system": "http://loinc.org", "code": "2345-7"}]},
+        "valueQuantity": {"value": 92, "unit": "mg/dL", "system": "http://unitsofmeasure.org", "code": "mg/dL"},
+        "specimen": {"reference": "Specimen/serum"}
+      }
+    },
+    {
+      "fullUrl": "https://example.org/fhir/Specimen/serum",
+      "resource": {
+        "resourceType": "Specimen",
+        "id": "serum",
+        "type": {"coding": [{"system": "http://terminology.hl7.org/CodeSystem/v2-0487", "code": "SER"}]}
+      }
+    }
+  ]
+}

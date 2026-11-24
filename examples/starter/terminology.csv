@@ -1,0 +1,33 @@
+loinc,print_name_es,long_common_name,observed_ucum_unit,loinc_version,status_in_release
+1742-6,Alanina aminotransferasa (ALT),Alanine aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/L,2.82,ACTIVE
+1751-7,Albúmina,Albumin [Mass/volume] in Serum or Plasma,g/dL,2.82,ACTIVE
+17861-6,Calcio total,Calcium [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+1920-8,Aspartato aminotransferasa (AST),Aspartate aminotransferase [Enzymatic activity/volume] in Serum or Plasma,U/L,2.82,ACTIVE
+1975-2,Bilirrubina total,Bilirubin.total [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2028-9,Dióxido de carbono total,"Carbon dioxide, total [Moles/volume] in Serum or Plasma",mmol/L,2.82,ACTIVE
+2075-0,Cloruro,Chloride [Moles/volume] in Serum or Plasma,mmol/L,2.82,ACTIVE
+2085-9,Colesterol HDL,Cholesterol in HDL [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2089-1,Colesterol LDL,Cholesterol in LDL [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2093-3,Colesterol total,Cholesterol [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2160-0,Creatinina,Creatinine [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2345-7,Glucosa,Glucose [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2571-8,Triglicéridos,Triglyceride [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+2823-3,Potasio,Potassium [Moles/volume] in Serum or Plasma,mmol/L,2.82,ACTIVE
+2885-2,Proteínas totales,Protein [Mass/volume] in Serum or Plasma,g/dL,2.82,ACTIVE
+2951-2,Sodio,Sodium [Moles/volume] in Serum or Plasma,mmol/L,2.82,ACTIVE
+3094-0,Nitrógeno ureico (BUN),Urea nitrogen [Mass/volume] in Serum or Plasma,mg/dL,2.82,ACTIVE
+4544-3,Hematocrito,Hematocrit [Volume Fraction] of Blood by Automated count,%,2.82,ACTIVE
+5905-5,Monocitos (%),Monocytes/Leukocytes in Blood by Automated count,%,2.82,ACTIVE
+6690-2,Leucocitos,Leukocytes [#/volume] in Blood by Automated count,10*3/uL,2.82,ACTIVE
+6768-6,Fosfatasa alcalina,Alkaline phosphatase [Enzymatic activity/volume] in Serum or Plasma,U/L,2.82,ACTIVE
+706-2,Basófilos (%),Basophils/Leukocytes in Blood by Automated count,%,2.82,ACTIVE
+713-8,Eosinófilos (%),Eosinophils/Leukocytes in Blood by Automated count,%,2.82,ACTIVE
+718-7,Hemoglobina,Hemoglobin [Mass/volume] in Blood,g/dL,2.82,ACTIVE
+736-9,Linfocitos (%),Lymphocytes/Leukocytes in Blood by Automated count,%,2.82,ACTIVE
+770-8,Neutrófilos (%),Neutrophils/Leukocytes in Blood by Automated count,%,2.82,ACTIVE
+777-3,Plaquetas,Platelets [#/volume] in Blood by Automated count,10*3/uL,2.82,ACTIVE
+785-6,Hemoglobina corpuscular media (HCM),MCH [Entitic mass] by Automated count,pg,2.82,ACTIVE
+786-4,Conc. de hemoglobina corpuscular media (CHCM),MCHC [Entitic Mass/volume] in Red Blood Cells by Automated count,g/dL,2.82,ACTIVE
+787-2,Volumen corpuscular medio (VCM),MCV [Entitic mean volume] in Red Blood Cells by Automated count,fL,2.82,ACTIVE
+788-0,Amplitud de distribución eritrocitaria (RDW-CV),Erythrocyte [DistWidth] in Blood by Automated count,%,2.82,ACTIVE
+789-8,Hematíes,Erythrocytes [#/volume] in Blood by Automated count,10*6/uL,2.82,ACTIVE

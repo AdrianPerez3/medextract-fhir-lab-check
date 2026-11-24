@@ -1,0 +1,19 @@
+{
+  "resourceType": "Bundle", "type":"collection",
+  "entry":[
+    {"fullUrl":"https://example.org/fhir/DiagnosticReport/absence","resource":{
+      "resourceType":"DiagnosticReport","id":"absence","status":"unknown","code":{"text":"Hemograma"},
+      "identifier":[{"system":"https://example.org/medextract/row/reports","value":"LAB-ABS-001"}],
+      "result":[{"reference":"Observation/eos"},{"reference":"Observation/bas"}]}},
+    {"fullUrl":"https://example.org/fhir/Observation/eos","resource":{
+      "resourceType":"Observation","id":"eos","status":"cancelled",
+      "identifier":[{"system":"https://example.org/medextract/row","value":"r01"}],
+      "code":{"coding":[{"system":"http://loinc.org","code":"713-8"}]},
+      "valueQuantity":{"value":0,"system":"http://unitsofmeasure.org","code":"%","unit":"%"}}},
+    {"fullUrl":"https://example.org/fhir/Observation/bas","resource":{
+      "resourceType":"Observation","id":"bas","status":"final",
+      "identifier":[{"system":"https://example.org/medextract/row","value":"r02"}],
+      "code":{"coding":[{"system":"http://loinc.org","code":"706-2"}]},
+      "valueQuantity":{"value":0.00,"system":"http://unitsofmeasure.org","code":"%","unit":"%"}}}
+  ]
+}

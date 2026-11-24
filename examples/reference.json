@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "report_id": "LAB-DEMO-001",
+  "identifier_system": "https://example.org/medextract/row",
+  "rows": [
+    {"id": "r01", "loinc": "1988-5", "value": "0.10", "comparator": "≤", "unit": "mg/L", "status": null, "specimen": null},
+    {"id": "r02", "loinc": "2345-7", "value": "92", "comparator": null, "unit": "mg/dL", "status": "final", "specimen": {"system": "http://terminology.hl7.org/CodeSystem/v2-0487", "code": "SER"}}
+  ]
+}

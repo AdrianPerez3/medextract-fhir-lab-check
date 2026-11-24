@@ -1,0 +1,205 @@
+{
+  "measured_date": "2026-11-24",
+  "scope": "Three local, synthetic R4 collections. The fixture pairs an unperformed test with a genuinely measured zero. No resources were uploaded.",
+  "source": {
+    "path": "examples/absent-source.txt",
+    "sha256": "4d4e6f026bd9970c9e4526448a579187c19153d7eb7e12bdd8ac63be38ccc862"
+  },
+  "reference": {
+    "path": "examples/absent-reference.json",
+    "sha256": "fbb15254229dbbe3cace1761e48f06b7518846adc36ebeebb8952fcacaa4cb35"
+  },
+  "formal_validator": {
+    "artifact": {
+      "version": "7.0.6",
+      "git": "86bf796ddc97",
+      "url": "https://github.com/hapifhir/org.hl7.fhir.core/releases/download/7.0.6/validator_cli.jar",
+      "sha256": "2686590539f0b3ba7683149b25d78249f6886c04e2c326e884c5049d8947df89"
+    },
+    "fhir_core": {
+      "package": "hl7.fhir.r4.core#4.0.1",
+      "sha256": "b090bf929e1f665cf2c91583720849695bc38d2892a7c5037c56cb00817fb091"
+    },
+    "java": "OpenJDK 25.0.2",
+    "target": "base FHIR R4",
+    "eu_guide_loaded": false,
+    "remote_terminology": false,
+    "allow_example_urls": true,
+    "command": "scripts/validate-fhir.sh \"$work_dir/validator_cli.jar\" \"$input_json\" \"$new_outcome_json\"",
+    "flags": [
+      "-version",
+      "4.0.1",
+      "-tx",
+      "n/a",
+      "-allow-example-urls",
+      "true"
+    ]
+  },
+  "semantic_command": "python3 -m medextract_fhir_lab check --reference examples/absent-reference.json --bundle \"$input_json\"",
+  "independent_reader": {
+    "engine": "fhirpath@5.2.3",
+    "npm_integrity": "sha512-l1j7vAn7NDGE+vo6S+5IJH1AP5awFBsNlXCTuqVgItB5EE42ZTJ+1XXcUJZXrLiIl4ezcdbZ2vbKdzoFLEYfoA==",
+    "runtime": "Node.js 22.20.0",
+    "context": "fhirpath/fhir-context/r4",
+    "report_reference_expression": "Bundle.entry.resource.ofType(DiagnosticReport).result.reference",
+    "observation_expression": "Bundle.entry.where(fullUrl in %reported or ('Observation/' & resource.id) in %reported).resource.ofType(Observation).where(code.coding.where(system = 'http://loinc.org' and code = %loinc).exists())",
+    "variable_binding": "%reported is the report reference result; %loinc is 713-8 for r01 and 706-2 for r02. Each query matched exactly one linked Observation.",
+    "quantity_suffix": ".value.ofType(Quantity).value",
+    "reason_suffix": ".dataAbsentReason.coding.where(system = 'http://terminology.hl7.org/CodeSystem/data-absent-reason').code",
+    "scope": "Native JSON.parse yields JavaScript numbers. These readouts distinguish absence from numerical zero; the Python checker handles the wire-level decimal-place contract."
+  },
+  "cases": [
+    {
+      "id": "attested-absence-and-genuine-zero",
+      "input": {
+        "path": "examples/absent-correct.bundle.json",
+        "sha256": "36bc9e744ef822d917938fe2f3b09db5c837398ea45c563dc194ff4e1eacf006"
+      },
+      "validator": {
+        "exit_code": 0,
+        "severity": {
+          "fatal": 0,
+          "error": 0,
+          "warning": 10,
+          "information": 0
+        },
+        "issue_codes": {
+          "warning.business-rule": 1,
+          "warning.invalid": 6,
+          "warning.invariant": 3
+        },
+        "errors": []
+      },
+      "row_checker": {
+        "exit_code": 0,
+        "schema_version": 1,
+        "result": "pass",
+        "expected_rows": 2,
+        "findings": []
+      },
+      "fhirpath_readout": {
+        "r01": {
+          "measured_values": [],
+          "absence_reasons": [
+            "not-performed"
+          ]
+        },
+        "r02": {
+          "measured_values": [
+            0
+          ],
+          "absence_reasons": []
+        }
+      }
+    },
+    {
+      "id": "absence-replaced-by-zero",
+      "input": {
+        "path": "examples/absent-as-zero.bundle.json",
+        "sha256": "c885098122a551de67ccdf12f053e55ff835f9524ddb6cc65a1b7660a1a4ae9e"
+      },
+      "validator": {
+        "exit_code": 0,
+        "severity": {
+          "fatal": 0,
+          "error": 0,
+          "warning": 11,
+          "information": 0
+        },
+        "issue_codes": {
+          "warning.business-rule": 2,
+          "warning.invalid": 6,
+          "warning.invariant": 3
+        },
+        "errors": []
+      },
+      "row_checker": {
+        "exit_code": 1,
+        "schema_version": 1,
+        "result": "fail",
+        "expected_rows": 2,
+        "findings": [
+          {
+            "code": "invented-value",
+            "field": "valueQuantity",
+            "row_id": "r01"
+          }
+        ]
+      },
+      "fhirpath_readout": {
+        "r01": {
+          "measured_values": [
+            0
+          ],
+          "absence_reasons": []
+        },
+        "r02": {
+          "measured_values": [
+            0
+          ],
+          "absence_reasons": []
+        }
+      }
+    },
+    {
+      "id": "quantity-and-reason-together",
+      "input": {
+        "derived_from": "examples/absent-correct.bundle.json",
+        "description": "Insert the following ASCII line and LF immediately before the line that starts with six spaces and \"dataAbsentReason\". All other bytes are unchanged.",
+        "line": "      \"valueQuantity\":{\"value\":0,\"system\":\"http://unitsofmeasure.org\",\"code\":\"%\",\"unit\":\"%\"},",
+        "sha256": "9c6ee8bc1fd1164e206e9edaebc984ad41269b1fbe2694749be8df84873c8114"
+      },
+      "validator": {
+        "exit_code": 1,
+        "severity": {
+          "fatal": 0,
+          "error": 1,
+          "warning": 11,
+          "information": 1
+        },
+        "issue_codes": {
+          "error.invariant": 1,
+          "information.structure": 1,
+          "warning.business-rule": 2,
+          "warning.invalid": 6,
+          "warning.invariant": 3
+        },
+        "errors": [
+          {
+            "diagnostic": "Constraint failed: obs-6: 'dataAbsentReason SHALL only be present if Observation.value[x] is not present'",
+            "expression": [
+              "Bundle.entry[1].resource/*Observation/eos*/"
+            ]
+          }
+        ]
+      },
+      "row_checker": {
+        "exit_code": 2,
+        "diagnostic": "Input error: a supported absent result needs a v2 reference and no value"
+      },
+      "fhirpath_readout": {
+        "r01": {
+          "measured_values": [
+            0
+          ],
+          "absence_reasons": [
+            "not-performed"
+          ]
+        },
+        "r02": {
+          "measured_values": [
+            0
+          ],
+          "absence_reasons": []
+        }
+      }
+    }
+  ],
+  "warning_explanation": "All three have three missing-narrative warnings and six best practice warnings for the two Observations (subject, performer, effective time). The validator also warns once for each quantity whose UCUM % cannot be checked without a terminology server: one in the attested bundle, two in each control.",
+  "official_references": [
+    "https://hl7.org/fhir/R4/observation-definitions.html#Observation.dataAbsentReason",
+    "https://hl7.org/fhir/R4/codesystem-data-absent-reason.html",
+    "https://loinc.org/713-8",
+    "https://loinc.org/706-2"
+  ]
+}

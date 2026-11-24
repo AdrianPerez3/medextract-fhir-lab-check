@@ -1,0 +1,9 @@
+{
+  "schema_version": 2,
+  "identifier_system": "https://example.org/medextract/row",
+  "report_id": "LAB-ABS-001",
+  "rows": [
+    {"id":"r01","kind":"absent","loinc":"713-8","absent_reason":"not-performed","status":"cancelled","specimen":null},
+    {"id":"r02","kind":"quantity","loinc":"706-2","value":"0.00","unit":"%","display_unit":"%","comparator":null,"preserve_decimal_places":true,"status":"final","specimen":null}
+  ]
+}
